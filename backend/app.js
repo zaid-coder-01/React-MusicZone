@@ -15,7 +15,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(cors());
 const storage = new GridFsStorage({
-    url:"mongodb://mongodb:27017/MusicZoness",
+    url:"mongodb://localhost:27017/MusicZoness",
     options:{useNewUrlParser:true,useUnifiedTopology:true},
     file:(req,file)=>{
       return{
